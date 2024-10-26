@@ -9,11 +9,10 @@ import { Link } from 'react-router-dom';
          <p>
            Welcome organizer. What Party are we making tonight?
            <br />
-           Click on the button below.
          </p>
          <div>
           <p>Enter name:</p>
-            <textarea name="postContent" rows={1} cols={20} />
+            <textarea name="postContent" rows={1} cols={20} onChange={(e) => this.setState({userDataName: e.target.value})} />
          </div>
          <div>
           <p>Enter date:</p>
@@ -34,12 +33,14 @@ import { Link } from 'react-router-dom';
          <input type="checkbox" /> <text>games</text> <br />
          </div>
          <div className="Buttons">
-         <button type="button" class="action_btn_submit">
+         <Link to="/App">
+         <button type="button" class="action_btn_submit" onClick={function handleClick(){alert('Submission confirmed!');}}>
            Submit 
          </button>
+         </Link>
          </div>
          <Link to="/App">
-            <button variant="outlined">
+            <button variant="outlined" >
                 Back to the menu
             </button>
         </Link>
