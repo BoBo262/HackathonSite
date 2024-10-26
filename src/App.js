@@ -1,25 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import { Main } from './Main.js'
+import React from "react";
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
+    
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Welcome to Party Finder!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Main />
+        <Link to="/page1">
+            <button type="button" class="buttons">
+                Organizer Portal
+            </button>
+        </Link>
+        <Link to="/page2">
+            <button type="button" class="buttons">
+                Atendee Portal
+            </button>
+        </Link>
       </header>
     </div>
   );
 }
 
 export default App;
+
+
