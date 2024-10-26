@@ -16,10 +16,6 @@ import { Link } from 'react-router-dom';
          </div>
 
          <div>
-          <p>Choose available party</p>
-         </div>
-
-         <div>
           <p>What are you bringing? Choose at least one</p>
           <input type="checkbox" /> <text>food</text> <br />
           <input type="checkbox" /> <text>drinks</text> <br />

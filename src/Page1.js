@@ -23,7 +23,7 @@ import { Link } from 'react-router-dom';
          <select>
             <option value="Like Pub">Like Pub</option>
             <option value="80's Pub">80's Pub</option>
-            <option value="Sura">Sura</option>
+            <option value="Haven">Sura</option>
          </select>
          </div>
          <div>
